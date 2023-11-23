@@ -1,16 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+	--azul: #4a90e2;
+	--azul-claro: #87cefa;
+	--amarelo: #ffd700;
+	--rosa: #ff69b4;
+	--branco: #f9f9f9;
+	--verde: #00ff7f;
+	--verde-escuro: #32cd32;
+	--coral: #ff6f61;
+	--pessego: #ffdab9;
+}
+
 body {
 	--radius-s: 0px;
 	--radius-m: 0px;
 	--radius-l: 0px;
 	--input-radius: 0px;
 	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
+
+	--font-text-theme: "Wix Madefor Text", Onest, sans-serif;
+
+	/*CHECKBOX STYLES*/
+	--checkbox-radius: 10px;
+	--checkbox-marker-color: var(--background-primary);
+	--checkbox-color: var(--azul);
+	--checkbox-color-hover: var(--azul);
+
+	--checkbox-border-color-hover: var(--azul);
+
+	--indentation-guide-width: 1px;
+	--indentation-guide-color: var(--background-primary);
+
+	/*MODAL STYLES*/
+	--modal-radius: 20px;
+	--modal-max-width: 70vw;
+	--modal-border-color: var(--background-secondary);
+
+	/*NAVBAR STYLES*/
+	--nav-item-color-highlighted: var(--amarelo);
+	--nav-item-background-active: var(--background-primary);
+	--nav-item-padding: 6px;
+	--nav-item-parent-padding: 8px;
+	--nav-item-children-padding-left: 15px;
+	--nav-item-children-margin-left: 0px;
+
+	/*TAB STYLES*/
+	--tab-font-size: 1.2em;
+	--tab-font-weight: 300;
+
+	--tab-divider-color: var(--azul-claro);
+	--tab-outline-color: var(--background-primary);
+	--tab-stacked-font-size: 2em;
+	--tab-stacked-text-align: center;
+
+	--toggle-radius: 20px;
+	--toggle-thumb-radius: 20px;
+	--toggle-thumb-color: var(--background-primary);
+
+	--blockquote-background-color: var(--background-secondary);
+
+	--blockquote-border-thickness: 4px;
+	--blockquote-border-color: var(--azul-claro);
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+.theme-dark {
+	--background-primary: #171717;
+	--background-secondary: #444444;
+	--ribbon-background: #171717;
+
+	--nav-item-color: var(--branco);
+	--nav-item-color-hover: var(--verde);
+	--nav-item-color-active: var(--verde);
+	--nav-item-color-selected: var(--verde);
+	--nav-collapse-icon-color: var(--verde);
+
+	--tab-text-color: var(--verde);
+	--tab-text-color-active: var(--verde);
+
+	--tab-text-color-focused-active-current: var(--verde);
+}
+
+.theme-light {
+	--background-primary: #f0f0f0;
+	--background-secondary: #e6e6fa;
+
+	--ribbon-background: #f0f0f0;
+
+	--nav-item-color: #171717;
+	--nav-item-color-hover: var(--verde-escuro);
+	--nav-item-color-active: var(--verde-escuro);
+	--nav-item-color-selected: var(--verde-escuro);
+	--nav-collapse-icon-color: var(--verde-escuro);
+
+	--tab-text-color: var(--verde-escuro);
+	--tab-text-color-active: var(--verde-escuro);
+
+	--tab-text-color-focused-active-current: var(--verde-escuro);
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
 	display: none;
 }
 
@@ -31,4 +124,12 @@ svg * {
 
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+:root {
+	--input-focus-border-color: Highlight;
+	--input-focus-outline: 1px solid Canvas;
+	--input-unfocused-border-color: transparent;
+	--input-disabled-border-color: transparent;
+	/* Default Input Variables for Root */
 }
