@@ -171,6 +171,9 @@ body {
 		var(--accent-s),
 		calc(var(--accent-l) - 10%)
 	  );
+
+	  --text-highlight-bg-active:var(--amarelo-escuro);
+	  --text-highlight-bg:var(--amarelo-escuro);
 }
 
 .theme-dark {
@@ -219,6 +222,9 @@ body {
 	--graph-node-unresolved: var(--code-function);
 
 	--checkbox-border-color:var(--branco);
+	--link-color-hover:var(--coral);
+	--link-decoration-hover:var(--code-function);
+	--text-selection:var(--code-tag);
 
 }
 
@@ -271,6 +277,7 @@ body {
 
 	--checkbox-border-color:black;
 
+	--text-selection:var(--amarelo);
 
 }
 
