@@ -137,11 +137,6 @@ body {
 	--h2-line-height: 1.8;
 	--h3-line-height: 1.6;
 
-	/*LINK STYLES*/
-	--link-color: var(--amarelo);
-	--link-unresolved-color: var(--code-keyword);
-	--link-external-color: var(--amarelo);
-
 	--list-spacing: 3px;
 	--list-marker-color: var(--coral);
 	--list-marker-color-collapsed: var(--amarelo);
@@ -149,31 +144,30 @@ body {
 	--table-header-background: var(--background-secondary);
 	--table-header-background-hover: var(--background-secondary);
 
-
 	--text-muted: hsl(
 		var(--base-h),
 		calc(var(--base-s) - 5%),
 		calc(var(--base-l) - 60%)
-	  );
-	  --text-faint: hsl(
+	);
+	--text-faint: hsl(
 		var(--base-h),
 		calc(var(--base-s) - 5%),
 		calc(var(--base-l) - 30%)
-	  );
-	  --text-formatted: hsl(
+	);
+	--text-formatted: hsl(
 		var(--base-h),
 		calc(var(--base-s) - 5%),
 		calc(var(--base-l) - 35%)
-	  );
-	  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-	  --text-accent-hover: hsl(
+	);
+	--text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+	--text-accent-hover: hsl(
 		var(--accent-h),
 		var(--accent-s),
 		calc(var(--accent-l) - 10%)
-	  );
+	);
 
-	  --text-highlight-bg-active:var(--amarelo-escuro);
-	  --text-highlight-bg:var(--amarelo-escuro);
+	--text-highlight-bg-active: var(--amarelo-escuro);
+	--text-highlight-bg: var(--amarelo-escuro);
 }
 
 .theme-dark {
@@ -217,15 +211,19 @@ body {
 	--icon-color-active: var(--verde);
 	--icon-color-focused: var(--verde);
 
-
 	--graph-line: var(--branco);
 	--graph-node-unresolved: var(--code-function);
 
-	--checkbox-border-color:var(--branco);
-	--link-color-hover:var(--coral);
-	--link-decoration-hover:var(--code-function);
-	--text-selection:var(--code-tag);
+	--checkbox-border-color: var(--branco);
+	--link-color-hover: var(--coral);
+	--link-decoration-hover: var(--code-function);
+	--text-selection: var(--code-tag);
 
+	/*LINK STYLES*/
+
+	--link-color: var(--amarelo);
+	--link-unresolved-color: var(--code-keyword);
+	--link-external-color: var(--amarelo);
 }
 
 .theme-light {
@@ -258,12 +256,11 @@ body {
 	--code-tag: #228b22; /* Forest Green */
 	--code-value: #008000; /* Green */
 
-
 	--h1-color: var(--verde-escuro);
 	--h2-color: var(--roxo);
 	--h3-color: var(--coral);
 	--h4-color: var(--rosa);
-	--h5-color:var(--amarelo-escuro);
+	--h5-color: var(--amarelo-escuro);
 
 	--bold-color: var(--amarelo-escuro);
 	--italic-color: var(--amarelo-escuro);
@@ -271,14 +268,17 @@ body {
 	--icon-color-active: var(--verde-escuro);
 	--icon-color-focused: var(--verde-escuro);
 
-
 	--graph-line: black;
 	--graph-node-unresolved: var(--background-primary);
 
-	--checkbox-border-color:black;
+	--checkbox-border-color: black;
 
-	--text-selection:var(--amarelo);
+	--text-selection: var(--amarelo-escuro);
+	/*LINK STYLES*/
 
+	--link-color: var(--amarelo-escuro);
+	--link-unresolved-color: var(--code-keyword);
+	--link-external-color: var(--amarelo-escuro);
 }
 
 .workspace-tab-header.is-active::before,
