@@ -6,19 +6,20 @@
 
 
 ## Preview
-### Screenshots
 
+### Dark
 ![Screenshot1](<assets/Screenshot from 2023-11-23 20-33-45.png>)
 
 ![Screenshot2](<assets/Screenshot from 2023-11-27 17-41-33.png>)
 
+### Light
 ![Screenshot3](<assets/Screenshot from 2023-11-27 17-41-57.png>)
 
 ![Screenshot4](<assets/Screenshot from 2023-11-27 19-26-53.png>)
 
 ## Features
 
-- Ligth and Dark options
+- Light and Dark options
 - Semantic and harmonic colors
 - Focused on reading and speed
 
